@@ -59,6 +59,7 @@
 		/* ethernet0 is the H3 emac, defined in sun8i-h3.dtsi */
 		ethernet0 = &emac;
 		ethernet1 = &xr819;
+		rtc0 = "/soc/i2c@01c2b000/ds1307@6f";
 	};
 
 	chosen {
@@ -197,12 +198,31 @@
 &uart1 {
 	pinctrl-names = "default";
 	pinctrl-0 = <&uart1_pins>;
-	status = "disabled";
+	status = "okay";
 };
 
 &uart2 {
 	pinctrl-names = "default";
 	pinctrl-0 = <&uart2_pins>;
+	status = "okay";
+};
+
+&i2c0 {
+	status = "okay";
+};
+
+&i2c1 {
+	status = "okay";
+	#address-cells = <1>;
+	#size-cells = <0>;
+	ds1307@6f {
+		compatible = "microchip,mcp7941x";
+		reg = <0x6f>;
+		status = "okay";		
+	};
+};
+
+&rtc {
 	status = "disabled";
 };
 
