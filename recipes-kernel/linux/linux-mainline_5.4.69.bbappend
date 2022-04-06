@@ -10,4 +10,5 @@ do_patch:append() {
 
 do_configure:append() {
     kernel_conf_variable RTC_DRV_DS1307 y
+    kernel_conf_variable KEYBOARD_GPIO y
 }

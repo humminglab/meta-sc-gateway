@@ -79,6 +79,27 @@
 			label = "orangepi:red:status";
 			gpios = <&pio 0 17 GPIO_ACTIVE_HIGH>;
 		};
+
+		fan_on {
+			label = "fan";
+			gpios = <&pio 0 6 GPIO_ACTIVE_HIGH>;
+		};
+
+		uv_led {
+			label = "uv";
+			gpios = <&pio 0 13 GPIO_ACTIVE_HIGH>;
+		};
+	};
+
+	gpio_keys {
+		compatible = "gpio-keys";
+
+		pa7 {
+			label = "uv";
+			gpios = <&pio 0 7 GPIO_ACTIVE_HIGH>;
+			linux,input-type = <5>; /* EV_SW */
+			linux,code = <SW_LID>;
+		};
 	};
 
 	vdd_wifi: vdd_wifi {
