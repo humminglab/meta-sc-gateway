@@ -1,0 +1,12 @@
+[Unit]
+Description=SC Gateway Server
+After=syslog.target network.target
+
+[Service]
+Type=simple
+ExecStart=@BINDIR@/sc-gateway
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
