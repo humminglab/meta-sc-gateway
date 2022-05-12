@@ -4,11 +4,20 @@ SUMMARY = "SC Gateway Image"
 
 IMAGE_INSTALL = "packagegroup-core-boot \
     ${CORE_IMAGE_EXTRA_INSTALL} \
+    ${IMAGE_UTILS_INSTALL} \
     kernel-module-ccm \
     xradio \
     iw \ 
     wpa-supplicant \
+    sc-conf \
+    go-sc-gateway \
+    "
+
+IMAGE_UTILS_INSTALL = " \
+    strace \
     dropbear \
+    i2c-tools \
+    picocom \
     "
 
 IMAGE_LINGUAS = " "
