@@ -89,6 +89,26 @@
 			label = "uv";
 			gpios = <&pio 0 13 GPIO_ACTIVE_HIGH>;
 		};
+
+		warn_led {
+			label = "warn";
+			gpios = <&pio 0 2 GPIO_ACTIVE_HIGH>;
+		};
+
+		note_led {
+			label = "note";
+			gpios = <&pio 0 10 GPIO_ACTIVE_HIGH>;
+		};
+
+		link_led {
+			label = "link";
+			gpios = <&pio 0 14 GPIO_ACTIVE_HIGH>;
+		};
+
+		uart2_sel {
+			label = "uart2_sel";
+			gpios = <&pio 0 16 GPIO_ACTIVE_HIGH>;
+		};
 	};
 
 	gpio_keys {
@@ -98,7 +118,7 @@
 			label = "uv";
 			gpios = <&pio 0 7 GPIO_ACTIVE_HIGH>;
 			linux,input-type = <5>; /* EV_SW */
-			linux,code = <SW_LID>;
+			linux,code = <SW_MACHINE_COVER>;
 		};
 	};
 
