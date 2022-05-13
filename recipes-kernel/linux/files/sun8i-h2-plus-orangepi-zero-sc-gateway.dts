@@ -107,7 +107,7 @@
 
 		uart2_sel {
 			label = "uart2_sel";
-			gpios = <&pio 0 16 GPIO_ACTIVE_HIGH>;
+			gpios = <&pio 0 15 GPIO_ACTIVE_HIGH>;
 		};
 	};
 
