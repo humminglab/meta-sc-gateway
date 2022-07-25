@@ -5,8 +5,8 @@ LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/MIT;md5=0835ade698e0bcf8506ecda
 SRC_URI = "git://git@${GO_IMPORT};branch=main;protocol=ssh \
 		   file://sc-gateway.service \
            file://init"
-# SRCREV = "e8632952ce4fa42491a7e48fb3586d7eec06069d"
-SRCREV = "${AUTOREV}"
+SRCREV = "83fcbecb6519e3607282cdc15e3b0bdd92582c82"
+# SRCREV = "${AUTOREV}"
 UPSTREAM_CHECK_COMMITS = "1"
 
 GO_IMPORT = "gitlab.com/humminglab/sc-gateway"
