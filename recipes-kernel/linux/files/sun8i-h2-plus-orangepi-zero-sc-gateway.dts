@@ -83,6 +83,7 @@
 		fan_on {
 			label = "fan";
 			gpios = <&pio 0 6 GPIO_ACTIVE_HIGH>;
+			default-state = "on";
 		};
 
 		uv_led {
@@ -93,16 +94,19 @@
 		warn_led {
 			label = "warn";
 			gpios = <&pio 0 2 GPIO_ACTIVE_HIGH>;
+			linux,default-trigger = "timer";
 		};
 
 		note_led {
 			label = "note";
 			gpios = <&pio 0 10 GPIO_ACTIVE_HIGH>;
+			linux,default-trigger = "timer";
 		};
 
 		link_led {
 			label = "link";
 			gpios = <&pio 0 14 GPIO_ACTIVE_HIGH>;
+			linux,default-trigger = "timer";
 		};
 
 		uart2_sel {
