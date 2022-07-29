@@ -5,7 +5,7 @@ LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/MIT;md5=0835ade698e0bcf8506ecda
 SRC_URI = "git://git@${GO_IMPORT};branch=main;protocol=ssh \
 		   file://sc-gateway.service \
            file://init"
-SRCREV = "9b9487a56e043d56a3f7719ab86b5a46504fed33"
+SRCREV = "a165f6778fbe7de25dea3f6f0c0cbaf495ba1d36"
 # SRCREV = "${AUTOREV}"
 UPSTREAM_CHECK_COMMITS = "1"
 
