@@ -8,10 +8,8 @@ IMAGE_INSTALL:remove += "aktualizr aktualizr-info ${SOTA_CLIENT_PROV}"
 IMAGE_INSTALL = "packagegroup-core-boot \
     ${CORE_IMAGE_EXTRA_INSTALL} \
     ${IMAGE_UTILS_INSTALL} \
-    kernel-module-ccm \
-    xradio \
-    iw \ 
-    wpa-supplicant \
+    ${USB_WIFI} \
+    kernel-modules \
     sc-conf \
     go-sc-gateway \
     "
@@ -21,7 +19,14 @@ IMAGE_UTILS_INSTALL = " \
     dropbear \
     i2c-tools \
     picocom \
+    usbutils \
     "
+
+USB_WIFI = " \
+    iw \ 
+    wpa-supplicant \
+    linux-firmware-mt76x0 \
+"
 
 IMAGE_LINGUAS = " "
 
