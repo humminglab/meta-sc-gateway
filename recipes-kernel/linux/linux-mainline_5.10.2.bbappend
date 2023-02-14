@@ -11,6 +11,4 @@ do_patch:append() {
 do_configure:append() {
     kernel_conf_variable RTC_DRV_DS1307 y
     kernel_conf_variable KEYBOARD_GPIO y
-    kernel_conf_variable MT76x0U m
-    kernel_conf_variable RFKILL y
 }
