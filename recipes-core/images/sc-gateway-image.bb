@@ -8,7 +8,7 @@ IMAGE_INSTALL:remove += "aktualizr aktualizr-info ${SOTA_CLIENT_PROV}"
 IMAGE_INSTALL = "packagegroup-core-boot \
     ${CORE_IMAGE_EXTRA_INSTALL} \
     ${IMAGE_UTILS_INSTALL} \
-    kernel-module-ccm \
+    kernel-modules \
     xradio \
     iw \ 
     wpa-supplicant \
