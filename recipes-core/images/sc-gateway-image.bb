@@ -14,6 +14,7 @@ IMAGE_INSTALL = "packagegroup-core-boot \
     wpa-supplicant \
     sc-conf \
     go-sc-gateway \
+    tzdata \
     "
 
 IMAGE_UTILS_INSTALL = " \
